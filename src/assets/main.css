@@ -1,0 +1,534 @@
+/* Centrarea conținutului formularului */
+.form-container {
+    max-width: 800px; /* sau lățimea preferată */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Spațiere pentru estetică */
+  }
+  
+  /* Stiluri pentru input-uri și buton */
+  input[type="email"],
+  input[type="password"],
+  button[type="submit"] {
+    width: auto; /* Aceasta setează lățimea la dimensiunea naturală a elementului */
+    padding: 10px; /* Spațiere pentru confort la scriere */
+    margin: 8px 0; /* Spațiere între elemente */
+    display: block; 
+    margin-left: auto; /* Margine automată pentru aliniere la centru */
+    margin-right: auto;
+  }
+  
+  /* Stiluri pentru buton */
+  button[type="submit"] {
+    background-color: #4CAF50; /* Culoare de fundal pentru buton */
+    color: white; /* Culoarea textului */
+    border: none; /* Fără bordură */
+    cursor: pointer; /* Cursor de tip pointer când este deasupra butonului */
+    transition: background-color 0.3s ease; /* Tranzitie lină pentru hover */
+    padding: 10px 20px; /* Spațierea internă a butonului */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049; /* Schimbă culoarea de fundal la hover */
+  }
+  
+  /* Stiluri pentru navbar */
+  .navbar-container {
+    padding: 10px 0; /* Spațierea superioară și inferioară */
+    background-color: #333; /* Culoarea de fundal pentru navbar */
+  }
+  
+  .navbar-container a {
+    color: white; /* Culoarea linkurilor */
+    padding: 10px 15px; /* Spațierea internă pentru linkuri */
+    text-decoration: none; /* Fără subliniere la linkuri */
+    margin: 0 10px; /* Spațierea dintre linkuri */
+    display: inline-block; 
+  }
+  
+  .navbar-container a:hover {
+    background-color: #555; /* Culoarea de fundal la hover pentru linkuri */
+  }
+
+  /* Centrarea titlului de pe pagina de înregistrare/login */
+.view-title {
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+  }
+  
+  .error-message {
+    color: red;
+    margin: 10px 0;
+  }  
+
+
+  /* Stilul general al paginii de inventar */
+.inventory-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.inventory-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Stilul listei de produse */
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.product-item h2 {
+  margin: 0 0 10px 0;
+  color: #007bff;
+}
+
+.product-item p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Stilul butoanelor și select-ului */
+button, select {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover, select:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+.sort-and-create {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sort-button, .create-button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sort-button {
+  background-color: #3498db; 
+  color: white;
+}
+
+.inventory-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+/* Stiluri pentru butoane și select, inclusiv butonul Create New Product */
+button, select {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+  /* Add width to make buttons have the same width */
+  width: 200px; 
+}
+
+/* Stiluri specifice pentru butonul de sortare */
+.sort-button {
+  align-self: stretch; /* Stretch the button to fill the space */
+  width: auto; /* Reset width to auto for the select button */
+  margin-left: 40px;
+
+}
+
+/* Stilul pentru butonul Create New Product */
+.create-button {
+  background-color: yellow;
+  color: black;
+  margin-bottom: 20px; /* Space below the create button */
+}
+
+/* Stiluri comune pentru toate butoanele de acțiune */
+.action-button-invetory {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px; /* Ajustează spațiul dintre butoane */
+  border-radius: 5px; /* Ajustează pentru borduri rotunjite */
+}
+
+/* Stiluri pentru butoanele specifice */
+.create-button-inventory {
+  background-color: yellow;
+  color: black;
+}
+
+.view-button {
+  background-color: green;
+  color: white;
+}
+
+.update-button-inventory {
+  background-color: black;
+  color: white;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+/* Stiluri pentru titlul produsului */
+.product-title {
+  color: #333;
+}
+
+/* Stiluri pentru butonul Logout */
+.logout-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: red; /* Culoarea de fundal pentru Logout */
+  color: white; /* Culoarea textului pentru Logout */
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); /* O mică umbră pentru un aspect modern */
+}
+
+.logout-button:hover {
+  background-color: darkred; /* O nuanță mai închisă pentru butonul de Logout la hover */
+}
+
+
+/* UPDATE PRODUCT */
+
+.update-product-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Fundal similar cu product-item */
+  border-radius: 5px; /* Borduri rotunjite */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* O mică umbră pentru un aspect modern */
+}
+
+.update-product-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group-update {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.form-group-update label {
+  font-weight: bold;
+  color: #007bff; /* Culoare titlu produs din .product-item */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group-update input[type="text"],
+.form-group-update input[type="number"],
+.form-group-update textarea {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 5px;
+  width: 100%; /* Butonul să ocupe lățimea completă a form-group-ului */
+}
+
+.update-button {
+  background-color: #28a745; /* O culoare vibrantă pentru adăugare */
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #218838; /* O nuanță mai închisă la hover */
+}
+
+
+/* CREATE PRODUCT */
+
+.create-product-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Fundal similar cu product-item */
+  border-radius: 5px; /* Borduri rotunjite */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* O mică umbră pentru un aspect modern */
+}
+
+.create-product-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #007bff; /* Culoare titlu produs din .product-item */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 5px;
+  width: 100%; /* Butonul să ocupe lățimea completă a form-group-ului */
+}
+
+.create-button {
+  background-color: #28a745; /* O culoare vibrantă pentru adăugare */
+  color: white;
+}
+
+.create-button:hover {
+  background-color: #218838; /* O nuanță mai închisă la hover */
+}
+
+
+
+/* PRODUCT VIEW  */
+
+.product-view-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-view-category,
+.product-view-description,
+.product-view-price {
+  color: #333;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Styles for the file upload label to match the buttons on the Inventory page */
+.file-upload-button {
+  display: inline-block; /* Display label as an inline-block element */
+  background-color: #4CAF50; /* Background color for the button */
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0; /* Spacing between elements */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center; /* Center text inside the label */
+  width: auto; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); /* A slight shadow for a modern look */
+}
+
+.file-upload-button:hover {
+  background-color: #45a049; /* Darker shade for button on hover */
+}
+
+
+.file-upload-button {
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+/* CATEGORIES */
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Stiluri pentru pagina de inventar */
+.inventory-page {
+  display: flex;
+  max-width: 1200px; 
+}
+
+/* Stiluri pentru containerul de inventar */
+.inventory-container {
+  flex: 1;
+  margin-right: 20px; /* Spațiu între inventar și filtre */
+}
+
+/* Stiluri pentru containerul de filtre de categorii */
+.filters-container {
+  width: 200px; /* Lățimea containerului de filtre */
+  padding: 10px;
+  background: #f2f2f2; /* Culoarea de fundal */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  height: fit-content;
+  margin-left: auto;
+  margin-top: 140px;
+}
+
+
+/* PENTRU MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .inventory-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filters-container {
+    width: 100%;
+    order: -1; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
+  }
+
+  .form-container, .inventory-container, .product-view-container,
+  .product-view-title, .product-view-category,
+  .product-view-description, .product-view-price,
+  .sort-button, .create-button, .action-button  {
+    max-width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+  }
+
+  button, select {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .logout-button {
+    display: block; 
+    width: calc(100% - 20px); 
+    margin: 10px auto; 
+    padding: 10px; 
+    font-size: 16px;
+    border-radius: 5px; 
+  }
+
+  /* Centrarea conținutului formularului */
+  .form-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+}
+
+
+/* Stiluri pentru ecrane medii (tablete) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .inventory-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filters-container {
+    width: 100%;
+    order: -1; /* Acesta mută filtrele deasupra listei de inventar */
+    margin-top: 0;
+    margin-bottom: 20px; 
+  }
+
+  .inventory-container {
+    max-width: 100%;
+    margin: 0 auto; /* Centrarea containerului în pagina */
+    padding: 10px;
+  }
+
+  .sort-button, .create-button, .action-button {
+    width: 100%; 
+    margin: 0 auto;
+  }
+
+  .form-container, .product-view-container,
+  .product-view-title, .product-view-category,
+  .product-view-description, .product-view-price {
+    max-width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .logout-button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px; 
+    border-radius: 5px;
+  }
+
+  button, select {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .form-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+}
+
+
